@@ -1,0 +1,41 @@
+{% load static %}
+{% block content %}
+{% include 'header.html' %}  
+  
+    <div id="contact" class="contact-us section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <form id="contact" action="addfile" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="row">
+              <div class="col-lg-12">
+                <fieldset>
+                  <input type="file" name="file" id="name" placeholder="Please Enter Your Name" autocomplete="on" required>
+                </fieldset>
+              </div>
+             
+             
+              
+              <div class="col-lg-12">
+                <fieldset>
+                  <button type="submit" id="form-submit" class="main-button">Upload </button>
+                </fieldset>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="contact-dec">
+      <img src="{% static 'assets/images/contact-dec.png' %}" alt="">
+    </div>
+    <div class="contact-left-dec">
+      <img src="{% static 'assets/images/contact-left-dec.png' %}" alt="">
+    </div>
+  </div>
+  
+  
+
+
+  {% endblock %}

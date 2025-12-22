@@ -1,0 +1,35 @@
+{% load static %}
+{% block content %}
+{% include 'header.html' %}  
+  
+    <div id="contact" class="contact-us section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <h2>Registered Users</h2>
+          {% for i in result %}
+          <div class="user-card mb-3 p-3 border rounded">
+            <h5>User {{ forloop.counter }}</h5>
+            <p><strong>Name:</strong> {{ i.name }}</p>
+            <p><strong>Phone Number:</strong> {{ i.phone_number }}</p>
+            <p><strong>Email:</strong> {{ i.email }}</p>
+            <p><strong>Password:</strong> {{ i.password }}</p>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <div class="contact-dec">
+      <img src="{% static 'assets/images/contact-dec.png' %}" alt="">
+    </div>
+    <div class="contact-left-dec">
+      <img src="{% static 'assets/images/contact-left-dec.png' %}" alt="">
+    </div>
+  </div>
+  
+  
+  
+
+
+
+  {% endblock %}
