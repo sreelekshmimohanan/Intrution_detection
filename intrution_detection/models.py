@@ -15,5 +15,6 @@ class feedback(models.Model):
 
 class fileupload(models.Model):
     username=models.CharField(max_length=150)
-    file=models.FileField(max_length=150)
+    data=models.TextField(null=True, blank=True)  # JSON data content
     result=models.CharField(max_length=150)
+    upload_time = models.DateTimeField(auto_now_add=True)
