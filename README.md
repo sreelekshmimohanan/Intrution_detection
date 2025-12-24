@@ -1,3 +1,3 @@
 # Intrution_detection
 
-Machine Learning Projrct
+Machine Learning Project
