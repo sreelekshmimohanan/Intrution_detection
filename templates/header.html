@@ -24,6 +24,9 @@
     <link rel="stylesheet" href="{% static 'assets/css/templatemo-onix-digital.css' %}">
     <link rel="stylesheet" href="{% static 'assets/css/animated.css' %}">
     <link rel="stylesheet" href="{% static 'assets/css/owl.css' %}">
+
+ 
+
 <!--
 
 TemplateMo 565 Onix Digital
@@ -56,13 +59,14 @@ https://templatemo.com/tm-565-onix-digital
               <li class="scroll-to-section"><a href="http://127.0.0.1:8000/index" class="active">Home</a></li>
               <li class="scroll-to-section"><a href="http://127.0.0.1:8000/v_register">View User</a></li>
               <li class="scroll-to-section"><a href="http://127.0.0.1:8000/v_addfile">View Uploads</a></li>
-                            <li class="scroll-to-section"><a href="http://127.0.0.1:8000/logout" class="">Logout</a></li>
+              <li class="scroll-to-section"><a href="http://127.0.0.1:8000/logout" class="">Logout</a></li>
 
                {% elif request.session.uid %}
               <li class="scroll-to-section"><a href="http://127.0.0.1:8000/index" class="active">Home</a></li>
               <li class="scroll-to-section"><a href="http://127.0.0.1:8000/file">Upload</a></li>
-              <li class="scroll-to-section"><a href="http://127.0.0.1:8000/v_addfile_user">View Uploads</a></li>
-              <li class="scroll-to-section"><a href="http://127.0.0.1:8000/logout">Logout</a></li>
+              <li class="scroll-to-section"><a href="http://127.0.0.1:8000/logout" class="active">logout</a></li>
+              <!--<li class="scroll-to-section"><a href="http://127.0.0.1:8000/v_addfile_user">View Uploads</a></li>-->
+              <!--<li class="scroll-to-section"><a href="http://127.0.0.1:8000/logout" class="">Logout</a></li>-->
                    {% else %}
                                  <li class="scroll-to-section"><a href="http://127.0.0.1:8000/index">Home</a></li> 
                                                <li class="scroll-to-section"><a href="http://127.0.0.1:8000/reg">Register</a></li> 

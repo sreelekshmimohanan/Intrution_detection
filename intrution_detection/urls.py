@@ -35,6 +35,7 @@ urlpatterns = [
     path('v_feedback',views.v_feedback),
     path('file',views.file),
     path('addfile',views.addfile),
+    path('predict_and_save',views.predict_and_save),
     path('v_addfile',views.v_addfile),
     path('v_addfile_user',views.v_addfile_user),  
     path('admin/', admin.site.urls),
